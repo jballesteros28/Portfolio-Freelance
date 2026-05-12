@@ -9,7 +9,6 @@ function Process() {
     <section className="process section" id="proceso">
       <div className="container">
         <SectionHeader
-          eyebrow="Proceso"
           title="Mi proceso de trabajo"
           description="Un recorrido simple para entender, construir, entregar y mejorar sin perder claridad."
         />

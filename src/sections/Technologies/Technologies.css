@@ -3,7 +3,9 @@
 }
 
 .technologies__marquee {
-  width: 100%;
+  width: min(100% - 2rem, var(--container-width));
+  max-width: 980px;
+  margin: 0 auto;
   overflow: hidden;
   mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
 }
@@ -11,9 +13,10 @@
 .technologies__track {
   display: flex;
   width: max-content;
-  gap: 0.85rem;
+  gap: 1rem;
   padding: 0.15rem 0;
   animation: marquee 28s linear infinite;
+  animation-duration: 34s;
   will-change: transform;
 }
 

@@ -1,16 +1,16 @@
 .process__grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   padding-top: 0.8rem;
 }
 
 .process__grid::before {
   position: absolute;
-  top: 2.68rem;
-  right: 8%;
-  left: 8%;
+  top: 2.62rem;
+  right: 9%;
+  left: 9%;
   height: 1px;
   content: "";
   background-image: linear-gradient(90deg, rgba(168, 121, 255, 0.48) 50%, transparent 0);

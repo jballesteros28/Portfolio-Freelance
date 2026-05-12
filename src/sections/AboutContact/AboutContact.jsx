@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../../components/forms/ContactForm";
 import Badge from "../../components/common/Badge";
-import portraitImage from "../../assets/images/juan-david-portrait.png";
+import portraitImage from "../../assets/images/juan-david-portrait.jpg";
 import { aboutContent } from "../../data/siteContent";
 import { socialLinks } from "../../data/socialLinks";
 import { getIcon } from "../../utils/iconMap";

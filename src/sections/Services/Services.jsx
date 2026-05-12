@@ -9,7 +9,6 @@ function Services() {
     <section className="services section" id="servicios">
       <div className="container">
         <SectionHeader
-          eyebrow="Servicios"
           title="Servicios que ofrezco"
           description="Soluciones web, sistemas y soporte tecnico para pasar de la idea a una herramienta util."
         />

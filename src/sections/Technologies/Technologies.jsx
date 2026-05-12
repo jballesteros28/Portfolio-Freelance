@@ -11,7 +11,6 @@ function Technologies() {
     <section className="technologies section" id="tecnologias">
       <div className="container">
         <SectionHeader
-          eyebrow="Tecnologias"
           title="Tecnologias que manejo"
           description="Herramientas actuales para frontend, backend, datos y despliegue."
         />

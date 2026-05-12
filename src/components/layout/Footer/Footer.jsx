@@ -3,6 +3,7 @@ import { MessageCircle } from "lucide-react";
 import Button from "../../common/Button";
 import { socialLinks } from "../../../data/socialLinks";
 import { footerContent, footerLinks } from "../../../data/siteContent";
+import logoJD from "../../../assets/icons/favicon.ico";
 import { getIcon } from "../../../utils/iconMap";
 import "./Footer.css";
 
@@ -14,7 +15,7 @@ function Footer() {
       <div className="footer__inner">
         <div className="footer__brand">
           <a className="footer__logo" href="#inicio">
-            <span>JD</span>
+            <img className="navbar__logo" src={logoJD} alt="Juan David logo" />
             <strong>Juan David</strong>
           </a>
           <p>{footerContent.description}</p>

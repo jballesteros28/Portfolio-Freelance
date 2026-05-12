@@ -2,6 +2,7 @@ import React from "react";
 import { Menu, Send, X } from "lucide-react";
 import { useState } from "react";
 import Button from "../../common/Button";
+import logoJD from "../../../assets/icons/favicon.ico";
 import "./Navbar.css";
 
 const navLinks = [
@@ -21,7 +22,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <a className="navbar__brand" href="#inicio" onClick={closeMenu} aria-label="Ir al inicio">
-        <span className="navbar__mark">JD</span>
+        <img className="navbar__logo" src={logoJD} alt="Juan David logo" />
         <span className="navbar__brand-text">
           <strong>Juan David</strong>
           <small>Desarrollador Full Stack</small>

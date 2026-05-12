@@ -15,11 +15,12 @@
   position: fixed;
   z-index: -1;
   inset: 0 0 auto;
-  height: 4.05rem;
+  height: 5.4rem;
   content: "";
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(3, 6, 17, 0.72);
-  backdrop-filter: blur(20px);
+  background:
+    linear-gradient(180deg, rgba(3, 6, 17, 0.68), rgba(3, 6, 17, 0.26) 62%, transparent);
+  backdrop-filter: blur(14px);
+  pointer-events: none;
 }
 
 .navbar__brand {
@@ -31,17 +32,12 @@
   text-decoration: none;
 }
 
-.navbar__mark {
-  display: grid;
+.navbar__logo {
   width: 2rem;
   height: 2rem;
-  place-items: center;
-  border: 1px solid rgba(124, 92, 255, 0.52);
-  border-radius: 0.62rem;
-  background: linear-gradient(135deg, #5f3df5, #9b5cff);
-  box-shadow: 0 12px 28px rgba(124, 92, 255, 0.24);
-  color: white;
-  font-size: 0.76rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(124, 92, 255, 0.32));
 }
 
 .navbar__brand-text {

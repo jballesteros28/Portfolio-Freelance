@@ -9,7 +9,6 @@ function Projects() {
     <section className="projects section" id="proyectos">
       <div className="container">
         <SectionHeader
-          eyebrow="Proyectos"
           title="Proyectos destacados"
           description="Interfaces y sistemas demo pensados para operaciones reales, con buena experiencia y base mantenible."
         />

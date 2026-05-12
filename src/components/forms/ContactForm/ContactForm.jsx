@@ -53,7 +53,7 @@ function ContactForm({
       </div>
 
       <Button
-        className="button--full"
+        className="button--full contact-form__submit"
         type="submit"
         variant="primary"
         icon={Send}
