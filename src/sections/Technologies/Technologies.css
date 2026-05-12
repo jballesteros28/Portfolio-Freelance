@@ -1,0 +1,32 @@
+.technologies {
+  overflow: hidden;
+}
+
+.technologies__marquee {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+.technologies__track {
+  display: flex;
+  width: max-content;
+  gap: 0.85rem;
+  padding: 0.15rem 0;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.technologies__marquee:hover .technologies__track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .technologies__track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: min(100% - 2rem, var(--container-width));
+    margin: 0 auto;
+  }
+}

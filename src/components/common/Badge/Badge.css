@@ -1,0 +1,26 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 1.65rem;
+  padding: 0.35rem 0.62rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.badge--accent {
+  border-color: rgba(124, 92, 255, 0.36);
+  background: rgba(124, 92, 255, 0.14);
+  color: var(--color-primary-soft);
+}
+
+.badge--blue {
+  border-color: rgba(61, 139, 255, 0.34);
+  background: rgba(61, 139, 255, 0.12);
+  color: var(--color-secondary-soft);
+}

@@ -1,0 +1,114 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0 1.1rem;
+  background:
+    linear-gradient(180deg, rgba(8, 12, 26, 0.7), rgba(3, 6, 17, 0.96)),
+    rgba(3, 6, 17, 0.96);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: minmax(250px, 1.2fr) minmax(150px, 0.6fr) minmax(160px, 0.7fr) minmax(230px, 0.9fr);
+  align-items: start;
+  gap: clamp(1.2rem, 4vw, 3rem);
+  width: min(100% - 2rem, var(--container-width));
+  margin: 0 auto;
+}
+
+.footer__brand {
+  display: grid;
+  gap: 0.65rem;
+  max-width: 360px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.58rem;
+  width: fit-content;
+  color: var(--color-text);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.footer__logo span {
+  display: grid;
+  width: 1.9rem;
+  height: 1.9rem;
+  place-items: center;
+  border-radius: 0.72rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  font-size: 0.8rem;
+}
+
+.footer__logo strong {
+  font-size: 0.96rem;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.footer__group,
+.footer__cta {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.footer h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.88rem;
+}
+
+.footer__nav,
+.footer__socials {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.footer__nav a,
+.footer__socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  width: fit-content;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer__nav a:hover,
+.footer__socials a:hover {
+  color: var(--color-text);
+}
+
+.footer__cta .button {
+  width: fit-content;
+}
+
+.footer__copyright {
+  width: min(100% - 2rem, var(--container-width));
+  margin: 1.6rem auto 0;
+  border-top: 1px solid rgba(184, 198, 255, 0.08);
+  padding-top: 1rem;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  .footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+}

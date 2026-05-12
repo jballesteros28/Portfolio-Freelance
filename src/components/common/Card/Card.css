@@ -1,0 +1,38 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018)),
+    rgba(8, 12, 26, 0.84);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(18px);
+}
+
+.card::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.13), transparent 34%, rgba(44, 123, 255, 0.08));
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.card--interactive {
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.card--interactive:hover {
+  border-color: rgba(143, 105, 255, 0.58);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+.card--interactive:hover::before {
+  opacity: 1;
+}
