@@ -11,6 +11,10 @@ function Hero() {
 
   return (
     <section className="hero section" id="inicio">
+      <div className="hero__background" aria-hidden="true">
+        <img src={heroVisual} alt="" />
+      </div>
+
       <div className="hero__inner">
         <div className="hero__content animate-in">
           <Badge variant="accent" className="hero__badge">
@@ -52,10 +56,6 @@ function Hero() {
               Post-entrega
             </span>
           </div>
-        </div>
-
-        <div className="hero__visual animate-in animate-in--delay">
-          <img src={heroVisual} alt="Dashboard oscuro con metricas y modulos de sistema digital" />
         </div>
       </div>
     </section>

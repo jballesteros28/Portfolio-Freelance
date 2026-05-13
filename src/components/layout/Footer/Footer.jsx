@@ -56,7 +56,9 @@ function Footer() {
           </Button>
         </div>
       </div>
-      <p className="footer__copyright">Copyright 2026 Juan David. Portfolio freelance.</p>
+      <div className="footer__copyright">
+        <span>Copyright 2026 Juan David. Portfolio freelance.</span>
+      </div>
     </footer>
   );
 }

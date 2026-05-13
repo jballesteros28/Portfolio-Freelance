@@ -1,3 +1,12 @@
+.about-contact {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.12), transparent 38%),
+    radial-gradient(circle at 80% 60%, rgba(34, 211, 238, 0.08), transparent 42%);
+}
+
 .about-contact__inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);

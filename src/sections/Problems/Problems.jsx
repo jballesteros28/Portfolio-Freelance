@@ -8,11 +8,11 @@ import "./Problems.css";
 function Problems() {
   return (
     <section className="problems section" id="problemas">
-      <div className="container problems__inner">
-        <div className="problems__visual">
-          <img src={problemsVisual} alt="Mockup oscuro de procesos digitales conectados" />
-        </div>
+      <div className="problems__background" aria-hidden="true">
+        <img src={problemsVisual} alt="" />
+      </div>
 
+      <div className="container problems__inner">
         <div className="problems__content">
           <SectionHeader
             align="left"

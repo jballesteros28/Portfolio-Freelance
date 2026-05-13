@@ -56,13 +56,18 @@ a {
 }
 
 .container {
-  width: min(100% - 2rem, var(--container-width));
-  margin: 0 auto;
+  width: min(100% - 4rem, var(--container-width));
+  margin-inline: auto;
 }
 
 .section {
   scroll-margin-top: 6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.035);
   padding: clamp(2rem, 4vw, 3.4rem) 0;
+}
+
+.section:first-of-type {
+  border-top: none;
 }
 
 .section + .section {
@@ -74,67 +79,18 @@ a {
   top: 0;
   left: 50%;
   z-index: 2;
-  width: min(100% - 2rem, var(--container-width));
+  width: min(100% - 4rem, var(--container-width));
   height: 1px;
   content: "";
   background: linear-gradient(90deg, transparent, rgba(166, 185, 255, 0.12), transparent);
   transform: translateX(-50%);
 }
 
-.technologies,
-.projects,
-.process,
-.about-contact {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.technologies::before,
-.projects::before,
-.process::before,
-.about-contact::before {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  pointer-events: none;
-  filter: blur(40px);
-  opacity: 0.35;
-}
-
-.technologies::before {
-  top: 18%;
-  right: 8%;
-  width: min(36vw, 28rem);
-  height: min(28vw, 20rem);
-  background: radial-gradient(circle, rgba(34, 211, 238, 0.22), transparent 68%);
-}
-
-.projects::before {
-  top: 12%;
-  left: -8%;
-  width: min(42vw, 32rem);
-  height: min(34vw, 24rem);
-  background: radial-gradient(circle, rgba(63, 124, 255, 0.18), transparent 70%);
-}
-
-.process::before {
-  right: -10%;
-  bottom: 8%;
-  width: min(44vw, 34rem);
-  height: min(36vw, 26rem);
-  background: radial-gradient(circle, rgba(124, 63, 242, 0.24), transparent 68%);
-  opacity: 0.42;
-}
-
-.about-contact::before {
-  top: 12%;
-  left: 8%;
-  width: min(40vw, 30rem);
-  height: min(32vw, 23rem);
-  background:
-    radial-gradient(circle at 30% 45%, rgba(255, 189, 122, 0.12), transparent 58%),
-    radial-gradient(circle at 72% 50%, rgba(124, 92, 255, 0.18), transparent 64%);
+@media (max-width: 768px) {
+  .container,
+  .section + .section::after {
+    width: min(100% - 2rem, var(--container-width));
+  }
 }
 
 @media (max-width: 700px) {

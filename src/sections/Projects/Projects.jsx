@@ -12,10 +12,14 @@ function Projects() {
           title="Proyectos destacados"
           description="Interfaces y sistemas demo pensados para operaciones reales, con buena experiencia y base mantenible."
         />
-        <div className="projects__grid">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+        <div className="projects__carousel" aria-label="Carrusel de proyectos destacados">
+          <div className="projects__track">
+            {projects.map((project) => (
+              <div className="projects__slide" key={project.id}>
+                <ProjectCard project={project} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

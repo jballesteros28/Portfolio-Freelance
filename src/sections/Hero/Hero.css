@@ -1,26 +1,39 @@
 .hero {
   position: relative;
-  display: grid;
-  min-height: clamp(600px, calc(100vh - 3rem), 700px);
-  align-items: center;
+  min-height: 680px;
   isolation: isolate;
   overflow: hidden;
-  padding-top: clamp(1.2rem, 2.8vw, 2.2rem);
-  padding-bottom: clamp(1.8rem, 3.4vw, 2.7rem);
+  background: #050816;
 }
 
 .hero.section {
-  padding-top: clamp(1.2rem, 2.8vw, 2.2rem);
-  padding-bottom: clamp(1.8rem, 3.4vw, 2.7rem);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.hero__background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  filter: saturate(1.16) contrast(1.08) brightness(1.18);
 }
 
 .hero::before {
   position: absolute;
   inset: 0;
+  z-index: -1;
   content: "";
   background:
-    linear-gradient(115deg, rgba(3, 6, 17, 0.15) 0%, transparent 38%, rgba(124, 92, 255, 0.16) 100%),
-    radial-gradient(circle at 82% 18%, rgba(124, 92, 255, 0.22), transparent 33%);
+    linear-gradient(90deg, rgba(5, 8, 22, 0.97) 0%, rgba(5, 8, 22, 0.88) 32%, rgba(5, 8, 22, 0.26) 62%, rgba(5, 8, 22, 0.04) 100%),
+    linear-gradient(180deg, rgba(5, 8, 22, 0.68) 0%, rgba(5, 8, 22, 0.04) 45%, rgba(5, 8, 22, 0.74) 100%);
   pointer-events: none;
 }
 
@@ -32,18 +45,18 @@
   width: min(62vw, 58rem);
   height: min(62vw, 58rem);
   content: "";
-  background: radial-gradient(circle, rgba(61, 139, 255, 0.2), transparent 68%);
+  background: radial-gradient(circle, rgba(61, 139, 255, 0.16), transparent 68%);
   filter: blur(24px);
   pointer-events: none;
 }
 
 .hero__inner {
   position: relative;
+  z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
-  align-items: stretch;
-  gap: clamp(1.6rem, 4vw, 3.5rem);
-  min-height: clamp(540px, calc(100vh - 8rem), 640px);
+  grid-template-columns: minmax(0, 0.55fr) minmax(0, 0.45fr);
+  align-items: center;
+  min-height: 680px;
   width: min(100% - 2rem, var(--container-width));
   margin: 0 auto;
 }
@@ -117,82 +130,32 @@
 }
 
 .hero__visual {
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  justify-self: stretch;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-}
-
-.hero__visual::before {
-  position: absolute;
-  inset: 5% -8% 0;
-  z-index: -1;
-  content: "";
-  background:
-    radial-gradient(circle at 58% 44%, rgba(124, 58, 237, 0.32), transparent 65%),
-    radial-gradient(circle at 30% 68%, rgba(61, 139, 255, 0.18), transparent 48%),
-    linear-gradient(135deg, rgba(124, 92, 255, 0.22), rgba(3, 6, 17, 0));
-  filter: blur(30px);
-  opacity: 0.95;
-}
-
-.hero__visual::after {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  content: "";
-  background:
-    linear-gradient(90deg, rgba(3, 6, 17, 0.68) 0%, rgba(3, 6, 17, 0.1) 18%, transparent 42%),
-    linear-gradient(180deg, rgba(3, 6, 17, 0.18) 0%, transparent 18%, transparent 78%, rgba(3, 6, 17, 0.3) 100%);
-  pointer-events: none;
-}
-
-.hero__visual img {
-  display: block;
-  width: min(112%, 780px);
-  height: auto;
-  max-height: 100%;
-  border: 0;
-  border-radius: 0;
-  object-fit: contain;
-  object-position: center right;
-  filter: drop-shadow(0 30px 70px rgba(98, 70, 234, 0.25)) drop-shadow(0 24px 62px rgba(0, 0, 0, 0.44));
-  transform: scale(1.04);
+  display: none;
 }
 
 /* Para mejor resultado, reemplazar hero-dashboard.webp por una imagen generada en formato horizontal, fondo transparente/oscuro integrado, laptop + mobile orientados hacia la derecha y con espacio negativo a la izquierda. */
 
-@media (max-width: 980px) {
+@media (max-width: 768px) {
   .hero {
     min-height: auto;
   }
 
   .hero__inner {
     grid-template-columns: 1fr;
-    align-items: center;
     min-height: auto;
-    padding-top: 1.8rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
   }
 
-  .hero__visual {
-    width: min(100%, 760px);
-    height: auto;
-    min-height: clamp(280px, 58vw, 430px);
-    justify-self: center;
+  .hero::before {
+    background:
+      linear-gradient(180deg, rgba(5, 8, 22, 0.95), rgba(5, 8, 22, 0.82)),
+      linear-gradient(90deg, rgba(5, 8, 22, 0.92), rgba(5, 8, 22, 0.65));
   }
 
-  .hero__visual img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    object-position: center;
-    transform: none;
+  .hero__background img {
+    object-position: center bottom;
+    opacity: 0.55;
   }
 }
 
@@ -207,7 +170,8 @@
 }
 
 @media (max-width: 440px) {
-  .hero__visual {
-    min-height: 230px;
+  .hero__inner {
+    padding-top: 5rem;
+    padding-bottom: 3.4rem;
   }
 }
