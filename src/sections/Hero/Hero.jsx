@@ -1,9 +1,11 @@
 import React from "react";
-import { ArrowRight, Clock3, Headphones, MessageCircle, Rocket, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
 import Button from "../../components/common/Button";
 import Badge from "../../components/common/Badge";
 import heroVisual from "../../assets/images/hero-dashboard.png";
 import { socialLinks } from "../../data/socialLinks";
+import { heroContent } from "../../data/siteContent";
+import { getIcon } from "../../utils/iconMap";
 import "./Hero.css";
 
 function Hero() {
@@ -19,42 +21,30 @@ function Hero() {
         <div className="hero__content animate-in">
           <Badge variant="accent" className="hero__badge">
             <Sparkles aria-hidden="true" size={16} />
-            Desarrollo web & sistemas
+            {heroContent.badge}
           </Badge>
-          <h1>Transformo ideas en soluciones digitales que impulsan negocios</h1>
-          <p>
-            Desarrollo sitios web, sistemas y aplicaciones modernas que optimizan procesos, mejoran la experiencia y
-            generan resultados.
-          </p>
+          <h1>{heroContent.title}</h1>
+          <p>{heroContent.subtitle}</p>
           <div className="hero__actions">
             <Button href="#proyectos" size="lg" icon={ArrowRight}>
-              Ver proyectos
+              {heroContent.primaryCta}
             </Button>
             <Button href={whatsappLink} size="lg" variant="secondary" icon={MessageCircle}>
-              Hablemos por WhatsApp
+              {heroContent.secondaryCta}
             </Button>
           </div>
-          <div className="hero__metrics" aria-label="Resumen de experiencia">
-            <span>
-              <Rocket aria-hidden="true" size={22} />
-              <strong>+5</strong>
-              Proyectos completados
-            </span>
-            <span>
-              <ShieldCheck aria-hidden="true" size={22} />
-              <strong>100%</strong>
-              Compromiso
-            </span>
-            <span>
-              <Clock3 aria-hidden="true" size={22} />
-              <strong>2+</strong>
-              Anos de experiencia
-            </span>
-            <span>
-              <Headphones aria-hidden="true" size={22} />
-              <strong>Soporte</strong>
-              Post-entrega
-            </span>
+          <div className="hero__metrics" aria-label={heroContent.metricsLabel}>
+            {heroContent.metrics.map((metric) => {
+              const Icon = getIcon(metric.icon);
+
+              return (
+                <span key={metric.id}>
+                  <Icon aria-hidden="true" size={22} />
+                  <strong>{metric.value}</strong>
+                  {metric.label}
+                </span>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "../../components/common/SectionHeader";
 import ProcessStep from "../../components/cards/ProcessStep";
 import { processSteps } from "../../data/processSteps";
+import { sectionContent } from "../../data/siteContent";
 import "./Process.css";
 
 function Process() {
@@ -9,8 +10,8 @@ function Process() {
     <section className="process section" id="proceso">
       <div className="container">
         <SectionHeader
-          title="Mi proceso de trabajo"
-          description="Un recorrido simple para entender, construir, entregar y mejorar sin perder claridad."
+          title={sectionContent.process.title}
+          description={sectionContent.process.description}
         />
         <div className="process__grid">
           {processSteps.map((step) => (

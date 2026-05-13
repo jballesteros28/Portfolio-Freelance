@@ -1,37 +1,37 @@
 export const problems = [
   {
     id: "whatsapp",
-    title: "Gestion desordenada por WhatsApp",
+    title: "¿Tu negocio depende demasiado de WhatsApp?",
     description:
-      "Centralizo solicitudes, turnos y datos importantes en sistemas claros para reducir perdidas de informacion.",
+      "Centralizo pedidos, turnos, consultas y datos importantes para que la información no se pierda en conversaciones.",
     icon: "MessagesSquare",
   },
   {
     id: "presencia-online",
-    title: "Falta de presencia profesional online",
+    title: "¿No tenés una presencia online que genere confianza?",
     description:
-      "Creo sitios que transmiten confianza, muestran tu propuesta y facilitan que potenciales clientes te contacten.",
+      "Creo sitios claros y profesionales que muestran tu propuesta y facilitan que nuevos clientes te contacten.",
     icon: "Globe2",
   },
   {
     id: "tareas-manuales",
-    title: "Tareas repetitivas manuales",
+    title: "¿Perdés tiempo en tareas repetitivas?",
     description:
-      "Automatizo procesos frecuentes para ahorrar tiempo, evitar errores y liberar foco operativo.",
+      "Automatizo procesos frecuentes para reducir errores, ahorrar tiempo y liberar foco operativo.",
     icon: "Repeat2",
   },
   {
     id: "informacion-clara",
-    title: "Falta de informacion clara para tomar decisiones",
+    title: "¿No tenés información clara para decidir?",
     description:
-      "Diseno paneles y estructuras de datos que ayudan a entender el estado real del negocio.",
+      "Desarrollo paneles y estructuras de datos para entender mejor qué está pasando en tu negocio.",
     icon: "BarChart3",
   },
   {
     id: "sistemas-escalables",
-    title: "Necesidad de sistemas seguros y escalables",
+    title: "¿Necesitás un sistema que pueda crecer?",
     description:
-      "Construyo bases tecnicas mantenibles, con buenas practicas y espacio para crecer sin rehacer todo.",
+      "Construyo bases técnicas mantenibles para que tu solución pueda evolucionar sin rehacer todo desde cero.",
     icon: "ShieldCheck",
   },
 ];

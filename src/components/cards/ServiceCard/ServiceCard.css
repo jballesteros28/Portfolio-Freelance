@@ -42,7 +42,7 @@
   font-size: 0.72rem;
   line-height: 1.55;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
 }
 
 .service-card__highlights {

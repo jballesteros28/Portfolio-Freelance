@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "../../components/common/SectionHeader";
 import ProblemCard from "../../components/cards/ProblemCard";
 import { problems } from "../../data/problems";
+import { sectionContent } from "../../data/siteContent";
 import problemsVisual from "../../assets/images/problems-mockup.png";
 import "./Problems.css";
 
@@ -16,8 +17,8 @@ function Problems() {
         <div className="problems__content">
           <SectionHeader
             align="left"
-            title="Problemas que resuelvo"
-            description="Menos caos operativo, mas claridad y sistemas que trabajan a favor del negocio."
+            title={sectionContent.problems.title}
+            description={sectionContent.problems.description}
           />
           <div className="problems__grid">
             {problems.map((problem) => (

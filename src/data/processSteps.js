@@ -4,7 +4,7 @@ export const processSteps = [
     number: "1",
     title: "Escucho tu necesidad",
     description:
-      "Entiendo el negocio, el objetivo y los puntos de friccion que conviene resolver primero.",
+      "Entiendo el negocio, el problema real y qué resultado tendría más impacto.",
     icon: "SearchCheck",
   },
   {
@@ -12,7 +12,7 @@ export const processSteps = [
     number: "2",
     title: "Defino la propuesta",
     description:
-      "Ordeno alcance, prioridades, tiempos y una solucion tecnica alineada al presupuesto.",
+      "Ordeno alcance, prioridades, tiempos y una solución viable para avanzar con claridad.",
     icon: "ClipboardList",
   },
   {
@@ -20,23 +20,23 @@ export const processSteps = [
     number: "3",
     title: "Desarrollo",
     description:
-      "Construyo con avances visibles, feedback temprano y foco en una base clara y mantenible.",
+      "Construyo por etapas, con avances visibles y foco en una base clara, útil y mantenible.",
     icon: "Code2",
   },
   {
     id: "entrega",
     number: "4",
-    title: "Entrega y documentacion",
+    title: "Entrega y documentación",
     description:
-      "Pruebo, despliego y dejo instrucciones simples para que puedas usar la solucion con autonomia.",
+      "Pruebo, despliego y dejo instrucciones simples para que puedas usar la solución con autonomía.",
     icon: "Rocket",
   },
   {
     id: "acompanamiento",
     number: "5",
-    title: "Acompanamiento",
+    title: "Acompañamiento",
     description:
-      "Te acompano post-entrega para ajustes, mejoras y nuevas necesidades que aparezcan con el uso.",
+      "Te acompaño después de la entrega para ajustes, mejoras y nuevas necesidades.",
     icon: "Headphones",
   },
 ];

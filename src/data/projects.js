@@ -5,12 +5,12 @@ import ecommerceMockup from "../assets/mockups/ecommerce-demo.png";
 export const projects = [
   {
     id: "sistema-bancario-demo",
-    title: "Sistema Bancario Demo",
+    title: "Panel Financiero Demo",
     description:
-      "Interfaz de operaciones bancarias con movimientos, resumen de cuenta y flujos pensados para control financiero.",
+      "Aplicación orientada a operaciones, movimientos y resumen de cuenta, pensada para mostrar flujos seguros y control de información.",
     image: bankingMockup,
-    technologies: ["React", "JavaScript", "CSS3"],
-    type: "Fintech demo",
+    technologies: ["React", "FastAPI", "PostgreSQL"],
+    type: "Fintech / Operaciones",
     links: {
       demo: "#contacto",
       code: "#contacto",
@@ -20,10 +20,10 @@ export const projects = [
     id: "sistema-turnos",
     title: "Sistema de Turnos",
     description:
-      "Gestion de reservas, disponibilidad y administracion de clientes para ordenar la operacion diaria.",
+      "Plataforma para organizar reservas, disponibilidad, clientes y sucursales desde un panel simple de administración.",
     image: bookingMockup,
     technologies: ["React", "FastAPI", "PostgreSQL"],
-    type: "Gestion",
+    type: "Gestión operativa",
     links: {
       demo: "#contacto",
       code: "#contacto",
@@ -31,16 +31,15 @@ export const projects = [
   },
   {
     id: "ecommerce-demo",
-    title: "E-commerce Demo",
+    title: "Tienda Online Demo",
     description:
-      "Catalogo, detalle de productos y experiencia de compra responsive para validar tiendas digitales.",
+      "Experiencia de compra responsive para mostrar productos, ordenar el catálogo y facilitar el camino hacia la venta.",
     image: ecommerceMockup,
-    technologies: ["Vite", "React", "MongoDB"],
+    technologies: ["React", "Vite", "MongoDB"],
     type: "Comercio digital",
     links: {
       demo: "#contacto",
       code: "#contacto",
     },
   },
-  
 ];
