@@ -25,7 +25,7 @@ export const heroContent = {
   badge: "Software a medida para negocios",
   title: "Convierto procesos desordenados en sistemas claros y escalables",
   subtitle:
-    "Creo sitios web, paneles y aplicaciones a medida para ayudar a negocios a organizar su operación, automatizar tareas y trabajar con más claridad.",
+    "Creo sitios web, paneles y aplicaciones a medida para ayudar a negocios a organizar su operación, automatizar tareas y trabajar con más eficiencia.",
   primaryCta: "Ver soluciones",
   secondaryCta: "Hablemos por WhatsApp",
   metricsLabel: "Resumen de experiencia",
@@ -79,7 +79,7 @@ export const aboutContent = {
   intro:
     "Creo soluciones web pensadas para resolver problemas reales de negocio: ordenar procesos, automatizar tareas y transformar ideas en herramientas útiles.",
   paragraphs: [
-    "Trabajo con React, Python, FastAPI y bases de datos modernas para construir aplicaciones claras, escalables y fáciles de mantener.",
+    "Trabajo con React, Python, FastAPI, Django y bases de datos modernas para construir aplicaciones claras, escalables y fáciles de mantener.",
     "Mi enfoque combina desarrollo técnico con mirada de negocio: no se trata solo de escribir código, sino de crear soluciones que ayuden a trabajar mejor.",
   ],
   formTitle: "Hablemos de tu proyecto",

@@ -3,14 +3,14 @@ import SectionHeader from "../../components/common/SectionHeader";
 import ProblemCard from "../../components/cards/ProblemCard";
 import { problems } from "../../data/problems";
 import { sectionContent } from "../../data/siteContent";
-import problemsVisual from "../../assets/images/problems-mockup.png";
+import problemsVisual from "../../assets/images/problems-mockup.webp";
 import "./Problems.css";
 
 function Problems() {
   return (
     <section className="problems section" id="problemas">
       <div className="problems__background" aria-hidden="true">
-        <img src={problemsVisual} alt="" />
+        <img src={problemsVisual} alt="" loading="lazy" />
       </div>
 
       <div className="container problems__inner">

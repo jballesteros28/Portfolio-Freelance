@@ -32,7 +32,7 @@ function Button({
         className={classes}
         href={href}
         target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noreferrer" : undefined}
+        rel={isExternal ? "noreferrer noopener" : undefined}
         {...props}
       >
         {content}

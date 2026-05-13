@@ -5,7 +5,8 @@ import Button from "../../common/Button";
 import { contactFormContent } from "../../../data/siteContent";
 import "./ContactForm.css";
 
-const FORMSPREE_ID = "TU_ID_DE_FORMSPREE";
+const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID || "TU_ID_DE_FORMSPREE";
+const isFormspreeConfigured = FORMSPREE_ID !== "TU_ID_DE_FORMSPREE";
 
 function ContactForm({
   title = contactFormContent.title,
@@ -19,7 +20,7 @@ function ContactForm({
     .join(" ");
 
   return (
-    <form className={className} onSubmit={handleSubmit}>
+    <form className={className} onSubmit={handleSubmit} aria-busy={state.submitting}>
       {(title || subtitle) && (
         <div className="contact-form__header">
           {title ? <h3>{title}</h3> : null}
@@ -33,6 +34,7 @@ function ContactForm({
           <input
             type="text"
             name="nombre"
+            autoComplete="name"
             placeholder={contactFormContent.fields.name.placeholder}
             required
             disabled={state.submitting}
@@ -45,6 +47,7 @@ function ContactForm({
           <input
             type="email"
             name="email"
+            autoComplete="email"
             placeholder={contactFormContent.fields.email.placeholder}
             required
             disabled={state.submitting}
@@ -70,7 +73,7 @@ function ContactForm({
         type="submit"
         variant="primary"
         icon={Send}
-        disabled={state.submitting || state.succeeded}
+        disabled={state.submitting || state.succeeded || !isFormspreeConfigured}
       >
         {state.submitting
           ? contactFormContent.submitting
@@ -82,6 +85,12 @@ function ContactForm({
       {state.succeeded ? (
         <p className="contact-form__status contact-form__status--success">
           {contactFormContent.success}
+        </p>
+      ) : null}
+
+      {!isFormspreeConfigured ? (
+        <p className="contact-form__status contact-form__status--error">
+          Configurá el ID de Formspree en VITE_FORMSPREE_ID para activar el formulario.
         </p>
       ) : null}
 

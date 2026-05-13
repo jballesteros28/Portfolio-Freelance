@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../../components/forms/ContactForm";
 import Badge from "../../components/common/Badge";
-import portraitImage from "../../assets/images/juan-david-portrait.jpg";
+import portraitImage from "../../assets/images/juan-david-portrait.webp";
 import { aboutContent } from "../../data/siteContent";
 import { socialLinks } from "../../data/socialLinks";
 import { getIcon } from "../../utils/iconMap";
@@ -31,7 +31,7 @@ function AboutContact() {
                 const Icon = getIcon(link.icon);
 
                 return (
-                  <a key={link.id} href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+                  <a key={link.id} href={link.href} target="_blank" rel="noreferrer noopener" aria-label={link.label}>
                     <Icon aria-hidden="true" size={16} />
                     <span>{link.label}</span>
                   </a>

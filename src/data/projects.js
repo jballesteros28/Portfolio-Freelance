@@ -1,6 +1,6 @@
-import bankingMockup from "../assets/mockups/sistema-bancario-demo.png";
-import bookingMockup from "../assets/mockups/sistema-turnos.png";
-import ecommerceMockup from "../assets/mockups/ecommerce-demo.png";
+import bankingMockup from "../assets/mockups/sistema-bancario-demo.webp";
+import bookingMockup from "../assets/mockups/sistema-turnos.webp";
+import ecommerceMockup from "../assets/mockups/ecommerce-demo.webp";
 
 export const projects = [
   {
@@ -35,11 +35,24 @@ export const projects = [
     description:
       "Experiencia de compra responsive para mostrar productos, ordenar el catálogo y facilitar el camino hacia la venta.",
     image: ecommerceMockup,
-    technologies: ["React", "Vite", "MongoDB"],
+    technologies: ["Python", "Django", "CSS","PostgreSQL"],
     type: "Comercio digital",
     links: {
-      demo: "#contacto",
-      code: "#contacto",
+      demo: "https://e-commerce-django-gbcs.onrender.com/",
+      code: "https://github.com/jballesteros28/E-commerce-django",
     },
   },
+  // {
+  //   id: "todo-list-demo",
+  //   title: "Tienda Online Demo",
+  //   description:
+  //     "Experiencia de compra responsive para mostrar productos, ordenar el catálogo y facilitar el camino hacia la venta.",
+  //   image: ecommerceMockup,
+  //   technologies: ["Python", "FastAPI", "React", "Vite","CSS","PostgreSQL"],
+  //   type: "Comercio digital",
+  //   links: {
+  //     demo: "https://my-list-to-do-eight.vercel.app/login",
+  //     code: "https://github.com/jballesteros28/My-List-To-Do",
+  //   },
+  // },
 ];

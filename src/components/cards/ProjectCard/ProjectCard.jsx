@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
   return (
     <Card className="project-card" interactive>
       <div className="project-card__media">
-        <img src={project.image} alt={`Mockup de ${project.title}`} loading="eager" />
+        <img src={project.image} alt={`Mockup de ${project.title}`} loading="lazy" />
         <Badge className="project-card__type" variant="blue">
           {project.type}
         </Badge>

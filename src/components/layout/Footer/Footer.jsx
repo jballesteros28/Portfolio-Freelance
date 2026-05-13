@@ -39,7 +39,7 @@ function Footer() {
               const Icon = getIcon(link.icon);
 
               return (
-                <a key={link.id} href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+                <a key={link.id} href={link.href} target="_blank" rel="noreferrer noopener" aria-label={link.label}>
                   <Icon aria-hidden="true" size={15} />
                   <span>{link.label}</span>
                 </a>

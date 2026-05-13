@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
 import Button from "../../components/common/Button";
 import Badge from "../../components/common/Badge";
-import heroVisual from "../../assets/images/hero-dashboard.png";
+import heroVisual from "../../assets/images/hero-dashboard.webp";
 import { socialLinks } from "../../data/socialLinks";
 import { heroContent } from "../../data/siteContent";
 import { getIcon } from "../../utils/iconMap";
