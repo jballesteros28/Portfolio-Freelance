@@ -27,7 +27,7 @@ function ProjectCard({ project }) {
         </div>
         <div className="project-card__actions">
           <a href={project.links.demo} className="project-card__link">
-            Ver proyecto <ArrowRight aria-hidden="true" size={15} />
+            Explorar demo<ArrowRight aria-hidden="true" size={15} />
           </a>
         </div>
       </div>

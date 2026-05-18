@@ -4,16 +4,16 @@ import ecommerceMockup from "../assets/mockups/ecommerce-demo.webp";
 
 export const projects = [
   {
-    id: "sistema-bancario-demo",
-    title: "Panel Financiero Demo",
+    id: "Loyalty Wallet SaaS",
+    title: "Loyalty Wallet SaaS",
     description:
-      "Aplicación orientada a operaciones, movimientos y resumen de cuenta, pensada para mostrar flujos seguros y control de información.",
+      "Solución SaaS para programas de fidelización y créditos internos, diseñada para automatizar recompensas, movimientos y operaciones ecommerce.",
     image: bankingMockup,
-    technologies: ["React", "FastAPI", "PostgreSQL"],
-    type: "Fintech / Operaciones",
+    technologies: ["React", "FastAPI", "PostgreSQL","Docker"],
+    type: "wallet / saas",
     links: {
-      demo: "#contacto",
-      code: "#contacto",
+      demo: "https://wallet-saas-gxh7.vercel.app/",
+      code: "https://github.com/jballesteros28/wallet-saas",
     },
   },
   {
