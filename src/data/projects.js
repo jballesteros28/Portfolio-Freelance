@@ -1,4 +1,4 @@
-import bankingMockup from "../assets/mockups/sistema-bancario-demo.webp";
+import bankingMockup from "../assets/mockups/wallet-saas.webp";
 import bookingMockup from "../assets/mockups/sistema-turnos.webp";
 import ecommerceMockup from "../assets/mockups/ecommerce-demo.webp";
 
