@@ -22,11 +22,11 @@ export const projects = [
     description:
       "Plataforma para organizar reservas, disponibilidad, clientes y sucursales desde un panel simple de administración.",
     image: bookingMockup,
-    technologies: ["React", "FastAPI", "PostgreSQL"],
+    technologies: ["Python","Django", "CSS", "PostgreSQL"],
     type: "Gestión operativa",
     links: {
-      demo: "#contacto",
-      code: "#contacto",
+      demo: "https://sistema-turnos-d7ex.onrender.com",
+      code: "https://github.com/jballesteros28/sistema-turnos",
     },
   },
   {
